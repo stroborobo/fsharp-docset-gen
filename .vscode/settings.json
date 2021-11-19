@@ -1,0 +1,22 @@
+{
+    "files.exclude": {
+        "**/.paket": true,
+        "**/.vs": true,
+        "**/bin": true,
+        "**/obj": true,
+        "**/.cache": true,
+        "**/node_modules": true,
+        "**/packages": true,
+        "**/paket-files": true,
+        "**/.keep": true,
+    },
+    "FSharp.excludeProjectDirectories": [
+        ".git",
+        "paket-files",
+        ".fable",
+        "packages",
+        "node_modules",
+        "out",
+        "work",
+    ]
+}
