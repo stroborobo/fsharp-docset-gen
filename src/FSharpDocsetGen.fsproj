@@ -1,18 +1,20 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="Program.fs" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Fake.Core.Environment" Version="5.20.4" />
     <PackageReference Include="Fake.Core.Process" Version="5.20.4" />
     <PackageReference Include="Fake.IO.FileSystem" Version="5.20.4" />
+    <!-- <PackageReference Include="FSharp.Data" Version="4.2.5" /> -->
+    <Reference Include="FSharp.Data">
+      <HintPath>../../FSharp.Data/src/FSharp.Data/bin/Release/netstandard2.0/FSharp.Data.dll</HintPath>
+    </Reference>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.0" />
   </ItemGroup>
-
 </Project>
